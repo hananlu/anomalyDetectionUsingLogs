@@ -18,7 +18,7 @@ st.set_page_config(
 # -------------------------------------------------------------
 @st.cache_resource
 def load_pipeline():
-    return joblib.load('anomaly_detection_pipeline.joblib')
+    return joblib.load('anomaly_detection.joblib')
 
 try:
     pipeline = load_pipeline()
